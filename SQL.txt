@@ -1,0 +1,55 @@
+show databases; // will show you all databases present
+create database [db_name;] // create database of name db_name
+use [db_name]; // move inside the database
+drop database [db_name]; //delete the database
+---------------------------------------------------------------------------------------------
+create table table_name (col1,col2,col3.......);
+
+show tables; // it will how many table are there 
+desc [table_name]; // display the data of the table
+drop table [table_name];// delete
+alter table [old_name] rename to [new_name];// rename
+truncate table [table_name];// erase data only
+---------------------------------------------------------------------------------------------
+insert  into [table_name](id, name, city) values(12,'Durgesh','delhi'); //you change order
+{same}
+insert  into [tabel_name] values(12,'Durgesh','delhi'); //sequencal adding
+alter table [table_name] add col1 datatype(size);//
+Q-> rename the col1
+update [table_name] set col = value, col = value where col = value;
+delete from [table_name] where col = value;
+selete * from [table_name]; // open and see the content of table
+-----------CALUES-----------------
+Where: condition;
+ * => All column;
+Alliese => chaning the of col for temparoy basis
+eg: select name as "UserName", city as ""CityName" from t1;
+Distinct// remove the repeation;
+eg: select distinct(country) from student;
+
+Two Contion we can use AND operator
+
+in operator // multipal selection at a time. 
+eg: select * from student where id in(23,234,233);
+limit operator // select from top 
+eg: select * from t1 limit 4;
+offset operator // how to leave
+eg: select * from t1 limit 2 offset 2;
+
+Sorting
+
+select * from student order by id; // acending
+select * from student order by id; // acending
+
+select * from student order by name; // acending according to dicsonary
+
+**like operator//
+  % used // A% it will display all the words starting from 'A'
+  _ used // single charater 
+
+
+
+
+
+
+
